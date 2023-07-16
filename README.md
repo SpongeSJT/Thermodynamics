@@ -71,7 +71,7 @@ From changes in entropy, it is possible to define the heat capacity of a materia
 or system. Heat capacity is defined as the amount of thermal energy required to
 change the temperature of a system by 1 K. Heat capacity is described as one of
 the second derivatives of G, and at constant pressure is:
-CP = T (dS/dT{_P})  (3.4)
+C<sub>P</sub> = T (dS/dT<sub>P</sub>)  (3.4)
 
 ##### Pressure
 Pressure is defined as the force exerted on the boundaries of a system. It is
@@ -79,7 +79,7 @@ directly linked to the volume of a system; reducing P allows a system to expand,
 while increasing P causes it to compress. Pressure is determined on a fundamental
 level following:
 
-P = 􀀀@U@V (3.5)
+P = dU/dV (3.5)
 
 where V is volume in m3. Pressure and volume are closely linked to the enthalpy
 of a system. The enthalpy of a system is defined as the sum of the internal energy
@@ -90,7 +90,7 @@ ties the effect of pressure to the Gibbs free energy of a system (Equation 3.1).
 
 Derivation of G to P gives the volume of a system:
 
-V = @G@P (3.6)
+V = dG/dP (3.6)
 
 It is therefore possible to calculate the contribution of pressure to the Gibbs free
 energy of the system by integration of Equation 3.6 (see Equation 3.9). This
@@ -122,17 +122,17 @@ at ambient conditions. Meta-stability is often exploited in industrial processes
 for generating novel alloys.
 
 It is important to introduce a new quantity in discussing the effects of composition
-on the Gibbs free energy, and that is the chemical potential (). Compositional
-equilibrium of a system easily identified in the form of  vs X plots (Figures
+on the Gibbs free energy, and that is the chemical potential ( $\mu$ ). Compositional
+equilibrium of a system easily identified in the form of $\mu$ vs X plots (Figures
 3.2, 3.3). Chemical potential is simply the change in G of a system through addition
 of an increment of component mass to a phase, and the masses of the other
 components under fixed P and T. When studying these changes, especially in
 simple 2 component systems, pressure and temperature are fixed so that only
 contributions from composition are considered. The chemical potential of each
 component in a system (A and B in Figures 3.2, 3.3) is equal in all coexisting
-phases at equilibrium ( and  in Figure 3.3). This can be easily proven: if the 
+phases at equilibrium ($\alpha$ and $\beta$ in Figure 3.3). This can be easily proven: if the $\mu$
 of some component is higher in one phase than the other, the excess mass of the
-component will shift to the lower  phase bringing the phases into equilibrium,
+component will shift to the lower $\mu$ phase bringing the phases into equilibrium,
 lowering the overall G of the system to achieve greater stability. Graphically, this
 is displayed by the common tangent between the phases in Figure 3.3. Systems
 may be composed of numerous phases, but common tangents may only connect
@@ -144,17 +144,16 @@ in a system as a function of composition.
 
 The Gibbs free energy for a two component system can be defined as:
 
-G = (1 􀀀 xB) A + xBB (3.7)
+G = (1-x<sub>B</sub>) $\mu$<sub>A</sub> + x<sub>B</sub> $\mu$<sub>B</sub> (3.7)
 
 where xB is the proportion of component B in the system, and A and B are
 the chemical potentials of A and B under constant P and T. Equation 3.7 can
 be expanded by breaking the chemical potentials into standard conditions and
 compositionally dependent parts, giving:
 
-G = ((1 􀀀 xB) [o A + RT ln aA] + xB [oB + RT ln aB] (3.8)
+G = ((1-x<sub>B</sub>) [ $\mu$<sup>o</sup><sub>A</sub> + RT ln a<sub>A</sub>] + xB [ $\mu$<sup>o</sup><sub>B</sub> + RT ln a<sub>B</sub>] (3.8)
 
-where o
-x is the chemical potential of the component at standard conditions, and
+where $\mu$<sup>o</sup><sub>x</sub> is the chemical potential of the component at standard conditions, and
 ax is the activity of the component in the system. The activity is defined as the
 effective concentration, i.e. only the portion of the component in the system that
 will undergo reaction. The values for activity vary between values of 0 and 1,
@@ -166,10 +165,10 @@ considered in a later section.
 Figure 3.2: Schematic of chemical potential vs. composition for a hypothetical system
 of liquid components A and B. The pressure and temperature of the system are fixed,
 therefore all changes to G in the system are dictated by composition change, and can
-be represented as chemical potential (). This system assumes complete miscibility between
+be represented as chemical potential ( $\mu$ ). This system assumes complete miscibility between
 the phases, allowing the existence of only one liquid. The dashed line represents
 the linear average of the mixture where only mechanical mixing is assumed, the difference
-between this and  of the miscible liquid is given by the equation on the graph.
+between this and $\mu$ of the miscible liquid is given by the equation on the graph.
 Point G shows the lowest energy composition of the system, marking the equilibrium
 composition of the system.
 
@@ -178,10 +177,10 @@ Figure 3.3: A hypothetical system of components A and B in which two phases of
 at which they are stable. Intersection of two such curves allows coexistence of the
 phases over a certain compositional range. The common tangent shows the equilibrium
 compositions for the components A and B where it touches the G-X curves for the  and
- phases. The equilibrium compositions XBand X
+ phases. The equilibrium compositions X <sup>$\alpha$</sup><sub>B</sub> and X <sup>$\beta$</sup><sub>B</sub>
 B are only positions at which the chemical potentials for B are equal between phases at these P T conditions. Between
 these two points, the phases coexist as a mechanical mixture in equilibrium, allowing
-crystallisation of  and  phases.
+crystallisation of $\alpha$ and $\beta$ phases.
 
 
 #### 3.1.2 Phase relations
@@ -189,7 +188,7 @@ crystallisation of  and  phases.
 The Gibbs free energy of any phase as a function of P at a given T may be
 assessed through the following equation:
 
-GP;T = G1bar;T + Z P1bar VTdP (3.9)
+G<sub>P;T</sub> = G<sub>1bar;T</sub> + $\int$ <sub>1bar</sub><sup>P</sup> V<sub>T</sub>dP (3.9)
 
 Where G1bar;T is equivalent to the chemical potential of the material at ambient
 pressure and the temperature of interest, and VT is the volume at the temperature
@@ -204,13 +203,12 @@ used to provide the required elemental information in this work. The database
 provides the information required to calculate chemical potential as a power series
 in terms of T:
 
-G = a + bT + cT ln (T) + X dT n (3.10)
+G = a + bT + cT ln (T) + $\sum$ dT<sup>n</sup> (3.10)
 
 where a; b; c and d are coefficients obtained through fitting experimental data,
 and n is a set of integers. When utilising these data for calculation of liquid
 alloys, consideration of non-ideal mixing behaviour is required.
 The second term in Equation 3.9 is less easily obtained. Metallurgical stud
-Figure 3.4: Schematic compression curve with integration area shown in red.
 ies rarely consider pressure effects on reactions, so the pressure contribution to
 G is poorly constrained for most materials. The second term is the inverse of
 Equation 3.6, meaning we can use changes in the volume and pressure to give us
@@ -220,12 +218,14 @@ affects the volume and compressibility of a material at elevated temperature.
 Once defined, the pressure contribution to the Gibbs free energy is given as the
 integration of the compression curve of the material (Figure 3.4).
 
+Figure 3.4: Schematic compression curve with integration area shown in red.
+
 ##### Phase transitions
 
 A phase transition in P-T space is defined as the point at which both phases
 either side of the transition are in equilibrium and are stable. In other words:
 
-GA = GA0 (3.11)
+G<sub>A</sub> = G<sub>A'</sub> (3.11)
 
 Where A and A’ represent different phases. It is possible to calculate any phase
 transition of a material based solely on the equations of state parameters and the
@@ -244,7 +244,7 @@ and hence is named the eutectic composition. These relations are most commonly
 plotted as temperature vs. composition plots, with the pure end member phases
 placed at opposite ends of the X axis and temperature on the Y axis (Figure 3.5).
 Figure 3.5: Schematic binary eutectic phase diagram between components of A and B.
-TEut and XEut represent the eutectic temperature and composition respectively. Fields
+T<sub>Eut</sub> and X<sub>Eut</sub> represent the eutectic temperature and composition respectively. Fields
 of A and B close to the end members are to display limited solubility of the solid phases
 in one another at high concentrations.
 
@@ -265,11 +265,10 @@ the liquidus curve may be be calculated for the eutectic by finding the zero poi
 The eutectic point cannot be determined from calculating one liquidus curve, so
 both are calculated using the Newton method until the crossover point of the
 curves is found. This method requires full knowledge of the equations of state of
-the phases in the system, as well as their G1barT relations.
+the phases in the system, as well as their G<sub>1barT</sub> relations.
 
 Figure 3.6: Schematic binary eutectic diagram displaying the solidification pathway
-of a liquid. The red star signifies a composition of Xl
-B dropping in temperature until it
+of a liquid. The red star signifies a composition of XlB dropping in temperature until it
 hits the liquidus for A+liq. The liquid evolves in composition along the liquidus line as
 temperature drops until the eutectic composition is met. The final product is a mixture
 of two solids with the same overall composition as Xl
@@ -279,11 +278,12 @@ but in reverse order.
 A simpler method to calculate the liquidus curve requires only the knowledge
 of the entropy upon melting of the end member phases, which may be derived
 from the melting curve. From Cemic, 2005:
-Tliquidus =SB  TmeltB SB 􀀀 RlnX (3.12)
 
-Tliquidus =SA  TmeltA SA 􀀀 Rln(1 􀀀 X) (3.13)
+T<sub>liquidus</sub> =( $\Delta$ S<sub>B</sub> $\times$ T<sub>meltB</sub>) / $\Delta$ S<sub>B</sub> - RlnX (3.12)
 
-Where Sx is the entropy of melting of the phase at pressure, TmeltB is the
+T<sub>liquidus</sub> =( $\Delta$ S<sub>A</sub> $\times$ T<sub>meltA</sub>) / ( $\Delta$ S<sub>A</sub> - Rln(1 - X)) (3.13)
+
+Where $\Delta$ S<sub>x</sub> is the entropy of melting of the phase at pressure, T<sub>meltB</sub> is the
 melting temperature of the end member at pressure, and X is the mole fraction
 of component B in the system. This method also requires paired equations to
 work, but it may be calculated from the melting curves of the end members
@@ -399,7 +399,7 @@ as "thermal pressure", added as a contribution to an isothermal "room
 temperature" EoS. In this work, only solid and liquid phases are considered, so
 all thermal contributions to the EoS will take the form of this thermal pressure
 correction. In Chapter 4, the thermal pressure models assumed for Fe3S are the
-Mie-Grüneisen Debye thermal pressure model and the linear KT models. The
+Mie-Grüneisen Debye thermal pressure model and the linear $\alpha$ KT models. The
 Mie-Grüneisen Debye model was adopted as it allows closer consideration of anharmonic
 contributions to the thermal pressure, which are difficult to deal with
-in the KT model.
+in the $\alpha$ KT model.
